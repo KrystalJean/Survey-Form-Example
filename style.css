@@ -1,21 +1,41 @@
-html,
-body {
-  background-color: #b19cd9;
-  text-align:center;
-  font-family: 'Bookman', Helvetica, sans-serif;
-  min-width: 320px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html {
+  margin: 0px;
+  padding: 0px;
 }
 
-header {
-  font-size: 50px;
-  margin: 20px
+body {
+  background: url(delaney-van-Fvurl_P-G1s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  font-family: "Bookman", Helvetica, sans-serif;
+  min-width: 320px;
+  color: rgb(230, 230, 230);
+}
+
+#title {
+  font-size: 48px;
+  text-shadow: -5px 5px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#description {
+  padding: 10px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 #form-outer {
-  background-color: #D8BFD8;
-  margin: 0 auto;
-  border-radius: 2px;
-  width: 90%;
+  background-color: #00000095;
+  border: black 2px solid;
+  margin: auto;
+  margin-bottom: 60px;
+  border-radius: 15px;
+  width: 70%;
   max-width: 900px;
   padding: 10px;
 }
@@ -27,6 +47,9 @@ header {
   padding: 5px;
   vertical-align: top;
   margin-top: 10px;
+  font-size: 18px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .rightTab {
@@ -41,50 +64,134 @@ header {
   width: 200px;
   padding: 3px;
   margin: 10px;
+  border: solid black 1px;
 }
 
 input[type="checkbox"],
-input[type="radio"]{
+input[type="radio"] {
   float: left;
-  margin-right: 5px;
+  margin-right: 5px; 
 }
 
-.radio, .checkbox {
+.radio,
+.checkbox {
   position: relative;
   left: -40px;
   margin-left: 15px;
   display: block;
   padding-bottom: 15px;
+  font-size: 18px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 #submit {
-  background-color: #563c5c;
-  border-radius: 3px;
+  background-color: #d65113;
+  border-radius: 15px;
   color: white;
   font-size: 15px;
-  height: 30px;
-  width: 90px;
+  height: 34px;
+  width: 110px;
   margin: 30px;
-  border: 1px solid;
+  border: 1px solid white;
+}
+
+#submit:hover {
+  font-size: 20px;
+  border: 2px solid white;
+}
+
+#submit:active {
+  color: #000;
+  border: 2px solid black;
 }
 
 .dropdown {
   height: 30px;
-  width: 200px;
-  padding:3px;
+  width: 210px;
+  padding: 3px;
   margin: 10px;
-  margin-top: 20px;  
+  margin-top: 20px;
+  border: solid black 1px;
 }
 
 #comments {
-  height: 70px;
+  height: 100px;
   width: 275px;
-  padding:5px;
+  padding: 5px;
   margin: 10px;
-  margin-top: 15px; 
+  margin-top: 15px;
+  border: solid black 1px;
 }
 
 #activities {
   display: inline-block;
   text-align: left;
- }
+}
+
+
+@media screen and (max-width: 1000px) {
+  #form-outer {
+    margin: auto;
+    margin-bottom: 60px;
+    width: 80%;  
+    padding: 5px;
+  }
+}
+  
+@media screen and (max-width: 650px) {
+
+  #form-outer {
+    
+    margin: auto;
+    margin-bottom: 60px;
+    width: 70%;  
+    padding: 10px;
+  }
+
+  #description {
+  padding: 10px 80px;
+  }
+
+  .labels {
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+
+  .rowTab {
+    padding: 5px 15px;
+    
+  }
+
+  .rightTab {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+
+  #comments {
+    height: 150px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  #form-outer {
+    margin: auto;
+    margin-bottom: 60px;
+    width: 80%;  
+    padding: 5px;
+  }
+
+  #description {
+    padding: 10px 40px;
+    }
+
+}
